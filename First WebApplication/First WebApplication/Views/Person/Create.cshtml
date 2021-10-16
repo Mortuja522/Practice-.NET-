@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2> Create</h2>
+
+
+ <form action="/Person/Createsubmit" method="post">
+
+     Name:          <input type="text" name="name" value=""  class="form-control"  />
+     Id:            <input type="text"  name="id" value="" class="form-control" />
+     Date Of Birth: <input type="date" name="dob" value="" class="form-control" />
+     Blood Group :  <select name="blood" id="" class="form-control">
+                    <option></option>
+                    <option>O+</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                   </select> <br />
+     <input type="submit" name="add" value=" Add"  class="btn-danger" />
+    
+
+ </form>
+
+

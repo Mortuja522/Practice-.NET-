@@ -1,0 +1,62 @@
+﻿@model List <First_WebApplication.Models.Information>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+<table class=" table table-condensed">
+
+    <tr>
+        <th>NAME</th>
+        <th>ID</th>
+        <th>Date Of Birth</th>
+        <th> Blood</th>
+
+
+    </tr>
+
+        @foreach (var item in Model)
+
+            {
+            <tr>
+
+           <td>@item.name</td>
+           <td>@item.id</td>
+           <td>@item.dob</td>
+           <td>@item.blood</td>
+            </tr>
+          }
+</table>
+
+
+
+
+
+
+
+
+@*<table class=" table table-bordered">
+
+    <tr>
+        <td> name </td>
+        <td> id </td>
+        <td> Dob </td>
+    </tr>
+    <tr>
+        <td> mortuja </td>
+        <td> 1233 </td>
+        <td> 12.2.3</td>
+    </tr>
+
+    <tr>
+        <td> munjer  </td>
+        <td> 34 </td>
+        <td> 31.12.1998 </td>
+    </tr>
+
+
+
+</table>
+*@
