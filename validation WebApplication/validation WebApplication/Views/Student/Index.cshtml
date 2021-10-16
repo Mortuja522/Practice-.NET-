@@ -1,0 +1,35 @@
+﻿@model List<validation_WebApplication.Models.Entity.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3><a href="/Student/Create" class="btn-danger"> ADD LIST </a></h3>
+
+<table class="table table-bordered">
+ 
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>DATE OF BIRTH</th>
+        <th>GENDER</th>
+        <th>CGPA</th>
+    </tr>
+    @foreach (var s in Model)
+    {
+<tr>
+    <td>@s.id</td>
+    <td>@s.name</td>>
+    <td>@s.dob</td>
+    <td>@s.gender</td>
+    <td>@s.cgpa</td>
+
+
+</tr>
+
+
+
+     };
+</table>
+

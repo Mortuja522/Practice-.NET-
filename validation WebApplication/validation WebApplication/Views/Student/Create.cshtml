@@ -1,0 +1,28 @@
+﻿@model validation_WebApplication.Models.Entity.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/Student/Create" method="post">
+
+    Name : <input type="text" name="name" class="form-control" />
+    @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+    <br />
+    Date Of Birth : <input type="date" name="dob" class="form-control" />
+    @Html.ValidationMessageFor(m => m.dob, "", new { @class = "text-danger" })
+    <br />
+
+    Gender : <input type="radio" name="gender" value="Male" /> Male
+    <input type="radio" name="gender" value="Female" /> Female
+    @Html.ValidationMessageFor(m => m.gender, "", new { @class = "text-danger" })
+    <br />
+
+    <input type="submit" name="add" value="Add" class="btn-primary" />
+
+
+
+</form>
+
+  
